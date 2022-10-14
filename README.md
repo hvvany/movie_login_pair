@@ -4,16 +4,22 @@
 
 ## 프로젝트 소개
 
-##### 📆프로젝트 기간
+##### 📆 프로젝트 기간
 
 - 2022.10.14
 
-##### 🧑‍💻사용 기술
+##### 🧑‍💻 사용 기술
 
 - 언어 : Python, HTML, CSS, Javascript(ES6)
 - 프레임워크 : Django, Bootstrap5
 
 ![Animation_2022-10-14-23-36-40](README.assets/Animation_2022-10-14-23-36-40.gif)
+
+##### 👩‍👧‍👦 Collaborators
+
+[![image-20221015005403579](README.assets/image-20221015005403579.png)](https://github.com/hvvany/movie_login_pair/graphs/contributors)
+
+
 
 ## 목표
 
@@ -23,11 +29,13 @@
 - **Staticfiles** 활용 정적 파일(이미지, CSS, JS) 다루기
 - Django **Auth** 활용 회원 관리(회원가입 / 회원 조회 / 로그인 / 로그아웃)
 
-## 토픽
+
+
+##### 토픽
 
 ### 1. 깃 설정
 
-branch main
+`branch` main
 
 - 원격 저장소 생성
 
@@ -59,7 +67,7 @@ branch main
 
 ### 2. 장고 개발환경 설정
 
-branch setup-django
+`branch` setup-django
 
 Django 프로젝트 생성
 
@@ -91,7 +99,11 @@ Django 프로젝트 생성
 
 ### 3. 회원가입
 
-branch accounts/signup
+> 회원 가입 버튼을 누르면 개인 정보 입력 후 사용자가 등록된다. 회원 가입 완료 후 자동으로 로그인이 되도룩 구현하였다.
+
+### ![Animation_2022-10-14-23-57-18](README.assets/Animation_2022-10-14-23-57-18.gif)
+
+`branch` accounts/signup
 
 앱 App
 
@@ -127,15 +139,17 @@ branch accounts/signup
 - `GET` http://127.0.0.1:8000/accounts/signup/
 - 회원가입 폼
 
-<aside> ❗ 위 과정 완료 후 [로컬/드라이버] accounts/signup → [원격/드라이버] accounts/signup,  Commit & Push 수행 [원격/드라이버] accounts/signup → [원격/드라이버] main, PR 생성 & Merge 수행 [원격/드라이버] accounts/signup 브랜치 삭제 [원격/전체] main → [로컬/전체] main, Pull 수행 [로컬/드라이버] accounts/signup 브랜치 삭제 드라이버 변경 [로컬/새 드라이버] accounts/login 브랜치에서 다음 토픽 진행
 
-</aside>
 
 ------
 
 ### 4. 로그인
 
-branch accounts/login
+> 로그인 버튼을 누르면 사용자 데이터 검증 후 목록 페이지로 이동하도록 구현
+
+### ![Animation_2022-10-15-00-00-33](README.assets/Animation_2022-10-15-00-00-33.gif)
+
+`branch` accounts/login
 
 **폼 Form**
 
@@ -158,13 +172,15 @@ branch accounts/login
 - 로그인 폼
 - 회원가입 페이지 이동 버튼
 
-<aside> ❗ 위 과정 완료 후 [로컬/드라이버] accounts/login → [원격/드라이버] accounts/login,  Commit & Push 수행 [원격/드라이버] accounts/login → [원격/드라이버] main, PR 생성 & Merge 수행 [원격/드라이버] accounts/login 브랜치 삭제 [원격/전체] main → [로컬/전체] main, Pull 수행 [로컬/드라이버] accounts/login 브랜치 삭제 드라이버 변경 [로컬/새 드라이버] accounts/index 브랜치에서 다음 토픽 진행
 
-</aside>
 
 ------
 
 ### 5. 회원 목록 조회
+
+> 회원 목록을 index에서 조회할 수 있도록 구현. 로그인 시에만 보이도록 하였다.
+
+![image-20221015000337453](README.assets/image-20221015000337453.png)
 
 `branch` accounts/index
 
@@ -182,13 +198,15 @@ branch accounts/login
 - 회원 목록 출력
 - 회원 아이디를 클릭하면 해당 회원 조회 페이지로 이동
 
-<aside> ❗ 위 과정 완료 후 [로컬/드라이버] accounts/index → [원격/드라이버] accounts/index,  Commit & Push 수행 [원격/드라이버] accounts/index → [원격/드라이버] main, PR 생성 & Merge 수행 [원격/드라이버] accounts/index 브랜치 삭제 [원격/전체] main → [로컬/전체] main, Pull 수행 드라이버 변경 [로컬/새 드라이버] accounts/detail 브랜치에서 다음 토픽 진행
 
-</aside>
 
 ------
 
 ### 6. 회원 정보 조회
+
+> 목록에서 회원 정보를 클릭하면 상세 정보를 보여준다.
+
+![Animation_2022-10-15-00-04-33](README.assets/Animation_2022-10-15-00-04-33.gif)
 
 `branch` accounts/detail
 
@@ -204,15 +222,21 @@ branch accounts/login
 
 - `GET` http://127.0.0.1:8000/accounts/[int:user_pk](int:user_pk)/
 
-<aside> ❗ 위 과정 완료 후 [로컬/드라이버] accounts/detail → [원격/드라이버] accounts/detail,  Commit & Push 수행 [원격/드라이버] accounts/detail → [원격/드라이버] main, PR 생성 & Merge 수행 [원격/드라이버] accounts/detail 브랜치 삭제 [원격/전체] main → [로컬/전체] main, Pull 수행 드라이버 변경 [로컬/새 드라이버] accounts/update 브랜치에서 다음 토픽 진행
 
-</aside>
 
 ------
 
 ### 7. 회원 정보 수정
 
-branch accounts/update
+> 내비게이션 바에서 로그인 후 회원정보 수정을 누르면 수정 폼으로 연결된다. 
+
+![Animation_2022-10-15-00-16-00](README.assets/Animation_2022-10-15-00-16-00.gif)
+
+> 추가로 비밀번호 수정도 구현하였다. 
+
+![Animation_2022-10-15-00-23-20](README.assets/Animation_2022-10-15-00-23-20.gif)
+
+`branch` accounts/update
 
 **폼 Form**
 
@@ -238,15 +262,17 @@ branch accounts/update
 
 - `GET` http://127.0.0.1:8000/accounts/update/
 
-<aside> ❗ 위 과정 완료 후 [로컬/드라이버] accounts/update → [원격/드라이버] accounts/update,  Commit & Push 수행 [원격/드라이버] accounts/update → [원격/드라이버] main, PR 생성 & Merge 수행 [원격/드라이버] accounts/update 브랜치 삭제 [원격/전체] main → [로컬/전체] main, Pull 수행 드라이버 변경 [로컬/새 드라이버] accounts/logout 브랜치에서 다음 토픽 진행
 
-</aside>
 
 ------
 
 ### 8. 로그아웃
 
-branch accounts/logout
+> 로그아웃을 누르면 계정이 로그아웃 되며 모든 url 요청을 통한 접근을 @login_required를 통해 막는다.
+
+![Animation_2022-10-15-00-24-57](README.assets/Animation_2022-10-15-00-24-57.gif)
+
+`branch` accounts/logout
 
 **기능 View**
 
@@ -254,15 +280,23 @@ branch accounts/logout
 
 - `POST` http://127.0.0.1:8000/accounts/logout/
 
-<aside> ❗ 위 과정 완료 후 [로컬/드라이버] accounts/logout → [원격/드라이버] accounts/logout,  Commit & Push 수행 [원격/드라이버] accounts/logout → [원격/드라이버] main, PR 생성 & Merge 수행 [원격/드라이버] accounts/logout 브랜치 삭제 [원격/전체] main → [로컬/전체] main, Pull 수행 드라이버 변경 [로컬/새 드라이버] template/navbar 브랜치에서 다음 토픽 진행
 
-</aside>
 
 ------
 
 ### 9. 네비게이션바
 
-branch template/navbar
+> 로그인, 로그아웃, 회원정보 수정을 네브바에 구현하였다. 로그인 상태에 따라 다르게 표시된다.
+
+- 로그아웃 상태 _ 회원 가입 / 로그인
+
+![image-20221015002633417](README.assets/image-20221015002633417.png)
+
+- 로그인 상태 _ 로그아웃 / 회원 정보 수정 / 비밀 번호 수정
+
+![image-20221015002704844](README.assets/image-20221015002704844.png)
+
+`branch` template/navbar
 
 **화면 Template**
 
@@ -288,7 +322,11 @@ branch template/navbar
 
 ### 10. 리뷰 생성
 
-branch reviews/create
+> 리뷰 게시글 작성페이지를 제작한다.
+
+![Animation_2022-10-15-00-28-48](README.assets/Animation_2022-10-15-00-28-48.gif)
+
+`branch` reviews/create
 
 **앱 App**
 
@@ -322,15 +360,17 @@ branch reviews/create
 - `GET` http://127.0.0.1:8000/reviews/create/
 - 리뷰 작성 폼
 
-<aside> ❗ 위 과정 완료 후 [로컬/드라이버] reviews/create → [원격/드라이버] reviews/create,  Commit & Push 수행 [원격/드라이버] reviews/create → [원격/드라이버] main, PR 생성 & Merge 수행 [원격/드라이버] reviews/create  브랜치 삭제 [원격/전체] main → [로컬/전체] main, Pull 수행 드라이버 변경 [로컬/새 드라이버] reviews/index 브랜치에서 다음 토픽 진행
 
-</aside>
 
 ------
 
 ### 11. 리뷰 목록 조회
 
-branch reviews/index
+> 메인 페이지에 리뷰 목록이 뜨도록 구현
+
+![image-20221015003014252](README.assets/image-20221015003014252.png)
+
+`branch` reviews/index
 
 **기능 View**
 
@@ -346,15 +386,17 @@ branch reviews/index
 - 리뷰 목록 출력
 - 제목을 클릭하면 해당 리뷰의 정보 페이지로 이동
 
-<aside> ❗ 위 과정 완료 후 [로컬/드라이버] reviews/index → [원격/드라이버] reviews/index,  Commit & Push 수행 [원격/드라이버] reviews/index → [원격/드라이버] main, PR 생성 & Merge 수행 [원격/드라이버] reviews/index  브랜치 삭제 [원격/전체] main → [로컬/전체] main, Pull 수행 드라이버 변경 [로컬/새 드라이버] reviews/detail 브랜치에서 다음 토픽 진행
 
-</aside>
 
 ------
 
 ### 12. 리뷰 정보 조회
 
-branch reviews/detail
+> 리뷰 목록에서 항목을 클릭하면 세부정보 표현
+
+![Animation_2022-10-15-00-31-15](README.assets/Animation_2022-10-15-00-31-15.gif)
+
+`branch` reviews/detail
 
 **기능 View**
 
@@ -370,15 +412,17 @@ branch reviews/detail
 - 해당 리뷰 정보 출력
 - 수정 / 삭제 버튼
 
-<aside> ❗ 위 과정 완료 후 [로컬/드라이버] reviews/detail → [원격/드라이버] reviews/detail,  Commit & Push 수행 [원격/드라이버] reviews/detail → [원격/드라이버] main, PR 생성 & Merge 수행 [원격/드라이버] reviews/detail  브랜치 삭제 [원격/전체] main → [로컬/전체] main, Pull 수행 드라이버 변경 [로컬/새 드라이버] reviews/update 브랜치에서 다음 토픽 진행
 
-</aside>
 
 ------
 
 ### 13. 리뷰 정보 수정
 
-branch reviews/update
+> 세부 보기에서 수정을 누르면 글을 수정할 수 있다.
+
+![Animation_2022-10-15-00-32-30](README.assets/Animation_2022-10-15-00-32-30-166576177299213.gif)
+
+`branch` reviews/update
 
 **기능 View**
 
@@ -393,15 +437,17 @@ branch reviews/update
 - `GET` http://127.0.0.1:8000/reviews/[int:review_pk](int:review_pk)/update/
 - 리뷰 수정 폼
 
-<aside> ❗ 위 과정 완료 후 [로컬/드라이버] reviews/update → [원격/드라이버] reviews/update,  Commit & Push 수행 [원격/드라이버] reviews/update → [원격/드라이버] main, PR 생성 & Merge 수행 [원격/드라이버] reviews/update  브랜치 삭제 [원격/전체] main → [로컬/전체] main, Pull 수행 드라이버 변경 [로컬/새 드라이버] reviews/delete 브랜치에서 다음 토픽 진행
 
-</aside>
 
 ------
 
 ### 14. 리뷰 삭제
 
-branch reviews/delete
+> 삭제 버튼을 누르면 게시글이 삭제된다.
+
+![Animation_2022-10-15-00-35-24](README.assets/Animation_2022-10-15-00-35-24.gif)
+
+`branch` reviews/delete
 
 **기능 View**
 
@@ -409,6 +455,3 @@ branch reviews/delete
 
 - `POST` http://127.0.0.1:8000/reviews/[int:review_pk](int:review_pk)/delete/
 
-<aside> ❗ 위 과정 완료 후 [로컬/드라이버] reviews/delete → [원격/드라이버] reviews/delete,  Commit & Push 수행 [원격/드라이버] reviews/delete → [원격/드라이버] main, PR 생성 & Merge 수행 [원격/드라이버] reviews/delete  브랜치 삭제 [원격/전체] main → [로컬/전체] main, Pull 수행 드라이버 변경
-
-</aside>
