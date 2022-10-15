@@ -4,18 +4,18 @@
 
 ## 프로젝트 소개
 
-##### 📆 프로젝트 기간
+### 📆 프로젝트 기간
 
 - 2022.10.14
 
-##### 🧑‍💻 사용 기술
+### 🧑‍💻 사용 기술
 
-- 언어 : Python, HTML, CSS, Javascript(ES6)
-- 프레임워크 : Django, Bootstrap5
+- **언어** : Python, HTML, CSS, Javascript(ES6)
+- **프레임워크** : Django, Bootstrap5
 
 ![Animation_2022-10-14-23-36-40](README.assets/Animation_2022-10-14-23-36-40.gif)
 
-##### 👩‍👧‍👦 Collaborators
+### 👩‍👧‍👦 Collaborators
 
 [![image-20221015005403579](README.assets/image-20221015005403579.png)](https://github.com/hvvany/movie_login_pair/graphs/contributors)
 
@@ -59,9 +59,8 @@
 
   [gitignore.io](https://www.toptal.com/developers/gitignore/)
 
-<aside> ❗ 위 과정 완료 후 [로컬/드라이버] main → [원격/드라이버] main, Commit & Push 수행 [원격/전체] 저장소 Clone 수행 드라이버 변경 [로컬/새 드라이버] setup-django 브랜치에서 다음 토픽 진행
 
-</aside>
+
 
 ------
 
@@ -75,10 +74,6 @@ Django 프로젝트 생성
 
 - 필요한 패키지 설치git
 
-  주의
-
-  ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d49ddbaf-6c78-4244-973d-0206774246d2/Untitled.png)
-
 - 패키지 목록 저장
 
   ```bash
@@ -91,9 +86,8 @@ Django 프로젝트 생성
   django-admin startproject config .
   ```
 
-<aside> ❗ 위 과정 완료 후 [로컬/드라이버] setup-django → [원격/드라이버] setup-django,  Commit & Push 수행 [원격/드라이버] setup-django → [원격/드라이버] main, PR 생성 & Merge 수행 [원격/드라이버] setup-django 브랜치 삭제 [원격/전체] main → [로컬/전체] main, Pull 수행 [로컬/드라이버] setup-django 브랜치 삭제 드라이버 변경 [로컬/새 드라이버] accounts/signup 브랜치에서 다음 토픽 진행
 
-</aside>
+
 
 ------
 
@@ -314,9 +308,8 @@ Django 프로젝트 생성
      - 로그인 페이지 이동 버튼
      - 회원가입 페이지 이동 버튼
 
-<aside> ❗ 위 과정 완료 후 [로컬/드라이버] template/navbar → [원격/드라이버] template/navbar,  Commit & Push 수행 [원격/드라이버] template/navbar → [원격/드라이버] main, PR 생성 & Merge 수행 [원격/드라이버] template/navbar  브랜치 삭제 [원격/전체] main → [로컬/전체] main, Pull 수행 드라이버 변경 [로컬/새 드라이버] reviews/create 브랜치에서 다음 토픽 진행
 
-</aside>
+
 
 ------
 
